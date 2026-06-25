@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox
+
+        xmlns="http://javafx.com/javafx"
+
+        xmlns:fx="http://javafx.com/fxml"
+
+
+        fx:controller="controller.CustomerController"
+
+
+        alignment="CENTER"
+
+        spacing="20">
+
+
+
+    <children>
+
+
+        <Label
+
+                text="CUSTOMER FOODGO"
+
+                style="-fx-font-size:25px;"/>
+
+
+
+        <Button
+
+                text="Cari Restoran"
+
+                onAction="#lihatMenu"/>
+
+
+        <Button
+
+                text="Buat Pesanan"
+
+                onAction="#buatPesanan"/>
+
+
+        <Button
+
+                text="Riwayat Pesanan"
+
+                onAction="#riwayat"/>
+
+
+
+    </children>
+
+
+
+</VBox>

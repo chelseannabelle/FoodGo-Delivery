@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox
+
+        xmlns="http://javafx.com/javafx"
+
+        xmlns:fx="http://javafx.com/fxml"
+
+
+        fx:controller="controller.PesananController"
+
+
+        spacing="15">
+
+
+    <children>
+
+
+        <Label
+
+                text="MANAGE PESANAN"
+
+                style="-fx-font-size:25px;"/>
+
+
+
+        <TextField fx:id="txtIdPesanan"
+                   promptText="ID Pesanan"/>
+
+
+
+        <TextField fx:id="txtPelanggan"
+                   promptText="Pelanggan"/>
+
+
+
+        <TextField fx:id="txtRestoran"
+                   promptText="Restoran"/>
+
+
+
+        <TextField fx:id="txtDriver"
+                   promptText="Driver"/>
+
+
+
+        <TextField fx:id="txtTotal"
+                   promptText="Total Harga"/>
+
+
+
+        <ComboBox
+
+                fx:id="cmbStatus"
+
+                promptText="Status Pesanan"/>
+
+
+
+        <ComboBox
+
+                fx:id="cmbPembayaran"
+
+                promptText="Pembayaran"/>
+
+
+
+
+        <HBox spacing="10">
+
+
+            <Button
+
+                    text="ADD"
+
+                    onAction="#addPesanan"/>
+
+
+
+            <Button
+
+                    text="SEARCH"
+
+                    onAction="#searchPesanan"/>
+
+
+
+            <Button
+
+                    text="EDIT"
+
+                    onAction="#editPesanan"/>
+
+
+
+            <Button
+
+                    text="DELETE"
+
+                    onAction="#deletePesanan"/>
+
+
+        </HBox>
+
+
+
+        <TableView
+
+                fx:id="tablePesanan"
+
+                prefHeight="300"/>
+
+
+
+    </children>
+
+
+</VBox>

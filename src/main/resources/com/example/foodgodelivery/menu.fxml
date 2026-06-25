@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox
+
+        xmlns="http://javafx.com/javafx"
+
+        xmlns:fx="http://javafx.com/fxml"
+
+
+        fx:controller="controller.MenuController"
+
+
+        spacing="15">
+
+
+    <children>
+
+
+        <Label
+
+                text="MANAGE MENU"
+
+                style="-fx-font-size:25px;"/>
+
+
+
+        <TextField fx:id="txtId"
+                   promptText="ID Menu"/>
+
+
+        <TextField fx:id="txtNama"
+                   promptText="Nama Menu"/>
+
+
+        <TextField fx:id="txtKategori"
+                   promptText="Kategori"/>
+
+
+        <TextField fx:id="txtHarga"
+                   promptText="Harga"/>
+
+
+        <TextField fx:id="txtDeskripsi"
+                   promptText="Deskripsi"/>
+
+
+        <TextField fx:id="txtStok"
+                   promptText="Stok"/>
+
+
+
+        <HBox spacing="10">
+
+
+            <Button
+
+                    text="ADD"
+
+                    onAction="#addMenu"/>
+
+
+            <Button
+
+                    text="SEARCH"
+
+                    onAction="#searchMenu"/>
+
+
+            <Button
+
+                    text="EDIT"
+
+                    onAction="#editMenu"/>
+
+
+            <Button
+
+                    text="DELETE"
+
+                    onAction="#deleteMenu"/>
+
+
+        </HBox>
+
+
+
+        <TableView
+
+                fx:id="tableMenu"
+
+                prefHeight="300">
+
+
+
+        </TableView>
+
+
+
+    </children>
+
+
+</VBox>

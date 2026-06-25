@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox
+
+        xmlns="http://javafx.com/javafx"
+
+        xmlns:fx="http://javafx.com/fxml"
+
+
+        fx:controller="controller.DriverController"
+
+
+        alignment="CENTER"
+
+        spacing="20">
+
+
+    <children>
+
+
+        <Label
+
+                text="DRIVER FOODGO"
+
+                style="-fx-font-size:25px;"/>
+
+
+
+        <Button
+
+                text="Pesanan Aktif"
+
+                onAction="#pesananAktif"/>
+
+
+
+        <Button
+
+                text="Update Pengiriman"
+
+                onAction="#updatePengiriman"/>
+
+
+
+    </children>
+
+
+</VBox>

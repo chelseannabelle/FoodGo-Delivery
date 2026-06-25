@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox
+
+        xmlns="http://javafx.com/javafx"
+        xmlns:fx="http://javafx.com/fxml"
+
+
+        fx:controller="controller.AdminController"
+
+
+        alignment="CENTER"
+
+        spacing="20">
+
+
+    <children>
+
+
+        <Label
+
+                text="ADMIN DASHBOARD"
+
+                style="-fx-font-size:25px;"/>
+
+
+
+        <Button
+
+                text="Manage Menu"
+
+                onAction="#manageMenu"
+
+                prefWidth="250"/>
+
+
+
+        <Button
+
+                text="Manage Pesanan"
+
+                onAction="#managePesanan"
+
+                prefWidth="250"/>
+
+
+
+        <Button
+
+                text="Logout"
+
+                onAction="#logout"
+
+                prefWidth="250"/>
+
+
+
+    </children>
+
+
+</VBox>
